@@ -4,7 +4,7 @@
     "scripts": {
         "build": "tsc",
         "compile": "tsc && node compile.mjs",
-        "dev": "vite --config src/vite.config.js",
+        "plugin-examples:dev": "vite --config src/vite.config.js",
         "build:examples:site": "vite build --config src/vite.config.js && node build-website.mjs"
     },
     "devDependencies": {
@@ -15,6 +15,7 @@
         "dts-bundle-generator": "^8.0.1",
         "fancy-canvas": "^2.1.0",
         "globby": "^13.1.4",
-        "lightweight-charts": "file:.."
+        "lightweight-charts": "file:..",
+        "lightweight-charts-libs": "file:../lib/dev/src"
     }
 }
